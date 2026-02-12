@@ -7,3 +7,4 @@ when we want o use different version of diffrent packages, we can use Docker to 
 3. AI Attribution: If you used GenAI (ChatGPT, Claude, etc.) to help write code, you must
 include the prompt you used and explain one logic error the AI made that you had to fix
 manually
+ 
