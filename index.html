@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johana Apupalo - Portfolio</title>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
@@ -11,9 +13,8 @@
 </header>
     <img
     src="assets/profile.jpeg"
-    width="200"
-    height="250"
     alt="Profile Picture"
+    class="profile-pic"
     />
 <nav>
    <ul>
@@ -25,6 +26,7 @@
 <main>
 <section id="about">
     <h3> About Me </h3>
+    <p> Hello! My name is Johana Apupalo, and I am a Computer Science student at Hunter College. I am passionate about database management and app development. I have experience working with Progress SQL and SQL, and I am eager to expand my skills in software engineering. In my free time, I enjoy exploring new technologies and learning from youtube tutorials about subjects like computational vision. Outside of my studies, I enjoy social dancing, making puzzles and playing sudoku.</p>
 </section>
 <section id="skills">
     <h3> Skills</h3>
@@ -44,23 +46,26 @@
 <section id="projects">
     <h3> Projects </h3>
         <table>
-            <tr>
-                <th> Project Name </th>
-                <th> Description </th>
-                <th> Technologies Used </th>
-            </tr>
-            <tr>
-                <td> Portfolio Website </td>
-                <td> A personal portfolio website to showcase my skills and projects. </td>
-                <td> HTML, CSS </td>
-            </tr>
-            <tr>
-                <td> Anime Convention Management System </td>
-                <td> A system to manage events, attendees, and schedules for an anime convention.</td>
-                <td> Progress SQL, SQL </td>
-            </tr>
-        
-            </table>
+            <thead>
+                <tr>
+                    <th> Project Name </th>
+                    <th> Description </th>
+                    <th> Technologies Used </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Portfolio Website </td>
+                    <td> A personal portfolio website to showcase my skills and projects. </td>
+                    <td> HTML, CSS </td>
+                </tr>
+                <tr>
+                    <td> Anime Convention Management System </td>
+                    <td> A system to manage events, attendees, and schedules for an anime convention.</td>
+                    <td> Progress SQL, SQL </td>
+                </tr>
+            </tbody>
+        </table>
         
 </section>
 </main>
@@ -68,23 +73,26 @@
 <a href="https://www.linkedin.com/in/johana-apupalo" target="_blank">
     <button>
     <img
-    src="https://images.icon-icons.com/2592/PNG/512/linkin_logo_icon_154491.png"
+    src="https://toppng.com/uploads/preview/linkedin-logo-black-png-linkedin-icon-black-and-white-11562906557v2906x3pr2.png"
     width="50"
     height="50"
     alt="LinkedIn Logo"
+    class = "social-icon"
     />
     </button>
 </a>
 <a href="https://github.com/Johanaapupalo/Johanaapupalo.github.io" target="_blank">
     <button>
     <img
-    src="https://images.icon-icons.com/2406/PNG/512/github_git_icon_145985.png"
+    src="https://w7.pngwing.com/pngs/203/560/png-transparent-github-logo-thumbnail.png"
     width="50"
     height="50"
     alt="GitHub Logo"
+    class = "social-icon"
     />
     </button>
 </a>
 <p>  © 2026 Johana Apupalo </p>
 </footer>
 </body>
+</html>

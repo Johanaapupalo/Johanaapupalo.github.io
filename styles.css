@@ -1,0 +1,112 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    background-color:lightblue;
+    color:black;
+}
+
+header{
+    background-color:lightblue;
+    padding:20px;
+    text-align:center;
+}
+header h1{
+    margin:0;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 90px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ header h2{
+    margin:0;
+    font-weight: 100;
+ }
+ nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+ }
+ nav ul li{
+    display: inline-block;
+ }
+nav ul li a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+nav,nav ul li a:hover{
+    background-color:black;
+    color:white;
+}    
+
+section{
+    padding:20px;
+    margin: 20px;
+    background-color:white;
+    width: 80%;
+    border-radius:5px;
+}
+.profile-pic{
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    display: block;
+    margin: 20px auto;
+}
+#about,
+#skills,
+#projects{
+    background-color:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:5px;
+    width:80%;
+}
+.skills-list{
+    list-style-type: none;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: red;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+table, th, td{
+    border:1px solid black;
+}
+footer{
+    background-color:lightblue;
+    text-align:center;
+    padding:10px;
+    width:100%;
+
+}
+.social-icon{
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+    display:inline-block;
+    background:none;
+}
+
+
+footer a{
+    border: none ;
+    text-decoration: none;
+   background:none ;
+   padding:0;
+}
+
+
+/* Conflict between #skills (ID) and .skills-list (class) background-color.
+Normally the last one defined in CSS takes precedence, 
+so .skills-list's background-color: red; would override #skills's background-color: white;, 
+but in this case #skills is an ID which has a higher specificity than .skills-list, so #skills's background-color: white; takes precedence. */
