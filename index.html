@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Johana Apupalo</h1>
-    <h2>CS Student| Software Engineering enthusiast </h2>
-</header>
+    <nav class="navbar">
+        <div class="logo"> 
+            <h1>Johana Apupalo</h1>
+            <h2>CS student | Software engineer entusiast</h2>
+         </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
     <img
     src="assets/profile.jpeg"
     alt="Profile Picture"
     class="profile-pic"
     />
-<nav>
-   <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    </ul>
-</nav>
 <main>
 <section id="about">
     <h3> About Me </h3>
@@ -31,7 +31,7 @@
 <section id="skills">
     <h3> Skills</h3>
         <h4> Programming Languages </h4>
-        <ul> 
+        <ul>
             <li> Python </li>
             <li> C++ </li>
             <li> Progress SQL, SQL</li>
@@ -42,33 +42,43 @@
             <li> Visual Studio Code </li>
         </ul>
 
+
 </section>
 <section id="projects">
     <h3> Projects </h3>
-        <table>
-            <thead>
-                <tr>
-                    <th> Project Name </th>
-                    <th> Description </th>
-                    <th> Technologies Used </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> Portfolio Website </td>
-                    <td> A personal portfolio website to showcase my skills and projects. </td>
-                    <td> HTML, CSS </td>
-                </tr>
-                <tr>
-                    <td> Anime Convention Management System </td>
-                    <td> A system to manage events, attendees, and schedules for an anime convention.</td>
-                    <td> Progress SQL, SQL </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <div class="projects-grid">
+        <div class="project-card">
+        <a href="https://Johanaapupalo.github.io/index.html" target="_blank">
+            <buttom> 
+                <img src="assets/profilewebsite.jpeg.png" alt="Portfolio Website Screenshot" class="profile-website-pic">
+            </buttom>
+        </a>
+                <h4> Portfolio Website </h4>
+                <p> A personal portfolio website to showcase my skills and projects. </p>
+        </div>
+        <div class="project-card">
+        <a href="https://docs.google.com/presentation/d/1eOSv8xpN_diXnGY77u9zI_hFUQiO3U4VCs0HyNJiNQU/edit?slide=id.g3afd4e5a21b_2_282#slide=id.g3afd4e5a21b_2_282" target="_blank">
+            <buttom>
+                <img src="assets/Anime Convention.png" alt="Anime Convention Management System Screenshot" class="anime-convention-pic">
+            </buttom>
+        </a>    
+                <h4> Anime Convention Management System </h4>
+                <p> A system to manage events, attendees, and schedules for an anime convention. </p>
+
+        </div>
+        <div class="project-card">
+            <a href="https://docs.google.com/presentation/d/1V9ZCh1SiJmCiZZiTXA3ywekw9zagGIYgYGFvLNPcRMo/edit?slide=id.g3aec509f8c6_0_201#slide=id.g3aec509f8c6_0_201" target="_blank">
+                <buttom>
+                    <img src="assets/FormFix.png" alt="FormFixScreenshot" class="FormFix-pic">
+                </buttom>
+            </a>
+                    <h4> FitCheck </h4>
+                    <p> An app to track the proper form of an individual while excersicing. </p>
+        </div>
+     
 </section>
 </main>
+   
 <footer>
 <a href="https://www.linkedin.com/in/johana-apupalo" target="_blank">
     <button>

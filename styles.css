@@ -1,69 +1,86 @@
+header{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin:0;
-    padding:0;
-    background-color:lightblue;
-    color:black;
+    background: lightblue;
+    color: black;
+}
+nav{
+    width: auto;
+    padding: 1rem 5%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.logo{
+    letter-spacing: 0.06rem;
+    margin-right: auto;
 }
 
-header{
-    background-color:lightblue;
-    padding:20px;
-    text-align:center;
-}
-header h1{
-    margin:0;
-    font-weight: 500;
+.logo h1{
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique;
-    font-size: 90px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(45, 91, 176);
+    margin-bottom: 0.1rem;
 }
- header h2{
-    margin:0;
+
+.logo h2{
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 100;
- }
- nav ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    overflow:hidden;
- }
- nav ul li{
-    display: inline-block;
- }
-nav ul li a{
-    display:block;
-    color:white;
-    text-align:center;
-    padding:14px 16px;
-    text-decoration:none;
+    color: rgb(40, 125, 186);
+    margin-bottom: 0.6rem;
 }
-nav,nav ul li a:hover{
-    background-color:black;
-    color:white;
-}    
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2 rem;
+    font-weight: 500;
+    color: rgb(75, 100, 150);
+}
+
+.nav-links li a:hover{
+    color: rgb(36, 84, 167);
+    text-shadow: 0 0 0.1rem rgb(36, 84, 167);
+
+}
 
 section{
-    padding:20px;
-    margin: 20px;
+    padding:2rem;
+    margin: 2rem;
     background-color:white;
     width: 80%;
-    border-radius:5px;
+    border-radius:0.3rem;
 }
 .profile-pic{
-    width:200px;
-    height: 200px;
+    width:15rem;
+    height: 15rem;
     border-radius:50%;
     display: block;
-    margin: 20px auto;
+    margin: 1.5rem auto;
 }
 #about,
 #skills,
 #projects{
     background-color:white;
-    margin:20px auto;
-    padding:20px;
-    border-radius:5px;
+    margin:2rem auto;
+    padding:2rem;
+    border-radius:0.3rem;
     width:80%;
 }
 .skills-list{
@@ -72,31 +89,55 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: red;
+
 }
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    margin-top: 1.5rem;
 }
-table, th, td{
-    border:1px solid black;
+
+
+.project-card{
+    background: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.1);
+}
+.profile-website-pic,
+.anime-convention-pic,
+.FormFix-pic{
+    display: block;
+    margin: 0.5rem auto;
+    text-align: center;
+    width: 10rem;
+    height: 10rem;   
+}
+
+.profile-website-pic:hover, .anime-convention-pic:hover, .FormFix-pic:hover{
+    transform: scale(1.05);
+    display:inline-block;
+    background:none;
+    color: rgb(36, 84, 167);
+
 }
 footer{
     background-color:lightblue;
     text-align:center;
-    padding:10px;
+    padding:1rem;
     width:100%;
+
 
 }
 .social-icon{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     transition: transform 0.2s ease;
     display:inline-block;
     background:none;
 }
-
 
 footer a{
     border: none ;
@@ -105,8 +146,28 @@ footer a{
    padding:0;
 }
 
+@media(max-width: 48rem){
+    nav,
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap: 1rem;
 
-/* Conflict between #skills (ID) and .skills-list (class) background-color.
-Normally the last one defined in CSS takes precedence, 
-so .skills-list's background-color: red; would override #skills's background-color: white;, 
-but in this case #skills is an ID which has a higher specificity than .skills-list, so #skills's background-color: white; takes precedence. */
+    }
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+    section,
+    #about,
+    #skills,
+    #projects{
+        width: 95%;
+    }
+
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .nav-links li a{
+        font-size: 1rem;
+    }
+}
